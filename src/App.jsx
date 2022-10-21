@@ -1,4 +1,8 @@
 import React from "react";
+import CheckPage from "./components/CheckPage";
+import EndPage from "./components/EndPage";
+import HiraganaStudy from "./components/HiraganaStudy";
+import KatakanaStudy from "./components/KatakanaStudy";
 import QuizPage from "./components/QuizPage";
 // import { useState } from "react";
 import StartPage from "./components/StartPage";
@@ -7,11 +11,12 @@ import StartPage from "./components/StartPage";
 function App() {
   return (
     <>
-    <div className="bg-emerald-100 h-screen w-screen">
-    {/* <StartPage /> */}
-    <QuizPage/>
-    </div>
-    
+    <StartPage />
+    {/* <QuizPage/> */}
+    {/* <CheckPage/> */}
+    {/* <EndPage/> */}
+    {/* <HiraganaStudy/> */}
+    {/* <KatakanaStudy/> */}
     </>
   );
 }
