@@ -22,8 +22,6 @@ const StartPage = () => {
           <button className="Buttons">Katakana Study</button>
         </div>
       </main>
-
-      
         <footer className="HeaderFooter">by Stuey</footer>
       </Card>
     </>

@@ -3,8 +3,13 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Amatic SC', cursive;
+ 
+  font-family: "Yomogi", cursive;
 }
+
+/* h2 {
+  font-family: 'Kosugi Maru', sans-serif;
+} */
 
 .Card {
   @apply flex flex-col justify-between text-center w-screen h-screen;
@@ -15,15 +20,19 @@ body {
 }
 
 .TopContainer {
-  @apply bg-blue-300 h-1/2 flex flex-col justify-evenly items-center rounded-b-3xl;
+  @apply bg-green h-1/2 py-8 flex flex-col gap-4 justify-evenly items-center rounded-b-3xl;
+}
+
+.EndPageTop {
+  @apply bg-teal h-2/3 py-8 flex flex-col gap-4 justify-evenly items-center rounded-b-3xl;
 }
 
 .BottomContainer {
-  @apply h-1/2 flex flex-col justify-center gap-4;
+  @apply bg-white h-1/2 flex flex-col justify-center gap-4;
 }
 
 .SpeechBubble {
-  @apply bg-white w-5/6 h-1/2 rounded-3xl flex justify-center items-center mx-auto font-bold text-6xl;
+  @apply bg-pureWhite w-5/6 h-1/2 rounded-3xl flex justify-center items-center mx-auto font-bold text-5xl;
 }
 
 .Cat1 {
@@ -31,9 +40,39 @@ body {
 }
 
 .Buttons {
-  @apply bg-white w-4/6 py-4 text-3xl rounded-3xl border-solid border-2 border-blue-500 mx-auto;
+  @apply bg-white w-4/6 text-2xl py-3 rounded-xl border-solid border-2 border-blue mx-auto;
+}
+
+.HiraganaMainContainer {
+  @apply bg-green h-full flex flex-col justify-center
+  
+}
+
+.KatakanaMainContainer {
+  @apply bg-blue h-full flex flex-col justify-center
+
+}
+
+.KanaGridContainer {
+  @apply grid grid-cols-5 gap-2 w-5/6 mx-auto
+}
+
+.KanaTitle {
+  @apply bg-pureWhite w-5/6 flex justify-center items-center mx-auto h-12 rounded-xl text-2xl font-bold
+}
+
+.KanaGridItem {
+  @apply bg-pureWhite rounded-xl p-1
+}
+
+.Romaji {
+  @apply  text-sm
+}
+
+.Kana {
+  @apply text-2xl
 }
 
 .HeaderFooter {
-  @apply bg-yellow-300 h-16 flex justify-around items-center;
+  @apply bg-yellow h-14 flex justify-around items-center text-xl;
 }

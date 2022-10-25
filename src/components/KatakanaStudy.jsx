@@ -3,200 +3,64 @@ import Card from "./Card";
 
 const KatakanaStudy = () => {
   return (
-    <Card>
-      <div className="flex justify-around items-center bg-red-300 w-screen">
+<Card>
+      <div className="HeaderFooter">
         <button>Home</button>
         <button>Quiz</button>
       </div>
-      <div className="flex justify-around items-center bg-blue-300 w-screen">
+      <main className="KatakanaMainContainer">
+      <div className="KanaTitle">
         Katakana
       </div>
-      <div className="grid grid-cols-11 grid-rows-5">
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
+      <div className="KanaGridContainer">
+
+      <div className="KanaGridItem">
+        <p className="Romaji">a</p>
+        <p className="Kana">あ</p>
       </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
+      <div className="KanaGridItem">
+        <p className="Romaji">i</p>
+        <p className="Kana">い</p>
       </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
+      <div className="KanaGridItem">
+        <p className="Romaji">u</p>
+        <p className="Kana">う</p>
       </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
+      <div className="KanaGridItem">
+        <p className="Romaji">e</p>
+        <p className="Kana">え</p>
       </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
+      <div className="KanaGridItem">
+        <p className="Romaji">o</p>
+        <p className="Kana">お</p>
       </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
+      <div className="KanaGridItem">
+        <p className="Romaji">ka</p>
+        <p className="Kana">か</p>
       </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
+      <div className="KanaGridItem">
+        <p className="Romaji">ki</p>
+        <p className="Kana">き</p>
       </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
+      <div className="KanaGridItem">
+        <p className="Romaji">ku</p>
+        <p className="Kana">く</p>
       </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
+      <div className="KanaGridItem">
+        <p className="Romaji">ke</p>
+        <p className="Kana">け</p>
       </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
+      <div className="KanaGridItem">
+        <p className="Romaji">ko</p>
+        <p className="Kana">こ</p>
       </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
+
+
+
       </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square"あ>あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      <div className="kana-container">
-        <p className="kana-square">A</p>
-        <p className="kana-square">あ</p>
-      </div>
-      </div>
+
+      </main>
+      <div className="HeaderFooter"></div>
     </Card>
   );
 };
