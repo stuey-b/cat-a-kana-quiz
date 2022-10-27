@@ -1,11 +1,41 @@
+const basicHiragana = [
+  'あ', 'い', 'う', 'え', 'お',
+  'か', 'き', 'く', 'け', 'こ',
+  'さ', 'し', 'す', 'せ', 'そ',
+  'た', 'ち', 'つ', 'て', 'と',
+  'な', 'に', 'ぬ', 'ね', 'の',
+  'は', 'ひ', 'ふ', 'へ', 'ほ',
+  'ま', 'み', 'む', 'め', 'も',
+  'や', 'ゆ', 'よ',
+  'ら', 'り', 'る', 'れ', 'ろ',
+  'わ','を','ん',
+]
+
+const advancedHiragana = [...basicHiragana,
+  'が', 'ぎ', 'ぐ', 'げ', 'ご',
+  'ざ', 'じ', 'ず', 'ぜ', 'ぞ',
+  'だ', 'ぢ', 'づ', 'で', 'ど',
+  'ば', 'び', 'ぶ', 'べ', 'ぼ',
+  'ぱ', 'ぴ', 'ぷ', 'ぺ', 'ぽ',
+]
+
+const basicAnswers = ["a", "i", "u", "e", "o"]
+
+
+const randomAnswer = (basicAnswers) => { 
+basicAnswers.sort(() => 0.5 - Math.random.slice(0))
+
+}
+
+
 const basicHiraganaQuestions = [
     {
       questionText: "あ",
       answerOptions: [
-        { id: 0, text: "ha", isCorrect: false },
-        { id: 1, text: "he", isCorrect: false },
+        { id: 0, text: {randomAnswer}, isCorrect: false },
+        { id: 1, text: {randomAnswer}, isCorrect: false },
         { id: 2, text: "a", isCorrect: true },
-        { id: 3, text: "shi", isCorrect: false },
+        { id: 3, text: {randomAnswer}, isCorrect: false },
       ],
     },
     {

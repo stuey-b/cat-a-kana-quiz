@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 body {
- 
   font-family: "Yomogi", cursive;
 }
 
@@ -40,7 +39,7 @@ body {
 }
 
 .Buttons {
-  @apply bg-white w-4/6 text-2xl py-3 rounded-xl border-solid border-2 border-blue mx-auto;
+  @apply bg-pureWhite w-4/6 text-2xl py-3 rounded-xl border-solid border-2 border-blue mx-auto;
 }
 
 .HiraganaMainContainer {

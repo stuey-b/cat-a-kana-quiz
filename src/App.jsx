@@ -11,11 +11,11 @@ import StartPage from "./components/StartPage";
 function App() {
   return (
     <>
-    {/* <StartPage /> */}
+    <StartPage />
     {/* <QuizPage/> */}
     {/* <CheckPage/> */}
     {/* <EndPage/> */}
-    <HiraganaStudy/>
+    {/* <HiraganaStudy/> */}
     {/* <KatakanaStudy/> */}
     </>
   );
