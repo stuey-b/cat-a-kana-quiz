@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 
-const HiraganaStudy = () => {
+const HiraganaStudyPage = () => {
   return (
     <Card>
       <div className="HeaderFooter">
@@ -209,4 +209,4 @@ const HiraganaStudy = () => {
   );
 };
 
-export default HiraganaStudy;
+export default HiraganaStudyPage;
