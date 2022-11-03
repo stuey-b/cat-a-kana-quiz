@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import { basicHiraganaQuestions, shuffleQuestions } from "../hiragana";
 
 const RestartHiraganaPage = ({
   setShowStartPage,
@@ -19,6 +20,7 @@ const RestartHiraganaPage = ({
     setShowHiraganaQuizPage(true);
     setScore(0);
     setCurrentQuestion(0);
+    shuffleQuestions(basicHiraganaQuestions);
   };
 
   const ContinueQuiz = () => {

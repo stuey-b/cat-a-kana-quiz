@@ -1,16 +1,25 @@
 import React from "react";
 import Card from "./Card";
+import { basicHiraganaQuestions, shuffleQuestions } from "../hiragana";
 
 const StartPage = ({
   setShowStartPage,
   setShowHiraganaQuizPage,
   setShowHiraganaStudyPage,
-  setShowKatakanaQuizPage,
-  setShowKatakanaStudyPage,
+  setShowHiraganaEndPage,
+  setShowRestartHiraganaPage,
+  setShowQuitHiraganaPage,
+  setShowLoadingPage,
+  setCurrentQuestion,
+  setScore,
+  score,
+  currentQuestion,
+  setShuffleQuestion,
 }) => {
   const StartHiraganaQuiz = () => {
     setShowStartPage(false);
-    setShowHiraganaQuizPage(true)
+    setShowHiraganaQuizPage(true);
+    shuffleQuestions(basicHiraganaQuestions);
   };
 
   const StartHiraganaStudy = () => {
@@ -18,15 +27,15 @@ const StartPage = ({
     setShowHiraganaStudyPage(true);
   };
 
-  const StartKatakanaQuiz = () => {
-    setShowStartPage(false);
-    setShowKatakanaQuizPage(true);
-  };
+  // const StartKatakanaQuiz = () => {
+  //   setShowStartPage(false);
+  //   setShowKatakanaQuizPage(true);
+  // };
 
-  const StartKatakanaStudy = () => {
-    setShowStartPage(false);
-    setShowKatakanaStudyPage(true);
-  };
+  // const StartKatakanaStudy = () => {
+  //   setShowStartPage(false);
+  //   setShowKatakanaStudyPage(true);
+  // };
 
   return (
     <>
@@ -44,12 +53,12 @@ const StartPage = ({
             <button onClick={StartHiraganaStudy} className="Buttons">
               Hiragana Study
             </button>
-            <button onClick={StartKatakanaQuiz} className="Buttons">
+            {/* <button onClick={StartKatakanaQuiz} className="Buttons">
               Katakana Quiz
             </button>
             <button onClick={StartKatakanaStudy} className="Buttons">
               Katakana Study
-            </button>
+            </button> */}
           </div>
         </main>
         <footer className="HeaderFooter">by Stuey</footer>

@@ -1,6 +1,6 @@
-  // const [currentQuestion, setCurrentQuestion] = useState(0);
-  // const [score, setScore] = useState(0);
-  // const [displayFinalResult, setFinalResult] = useState(false);
+// {basicHiraganaQuestions[currentQuestion].questionText}
+
+
 
   // // randomise the order of the questions
   // const shuffle = (basicHiraganaQuestions) => {
@@ -8,21 +8,25 @@
   // };
   // shuffle(basicHiraganaQuestions);
 
-  // //check is the div that was clicked is the correct answer and adds 1 to score
-  // const optionClicked = (isCorrect) => {
-  //   if (isCorrect) {
-  //     setScore(score + 1);
-  //   }
-  //   //stops the game going past the final question
-  //   if (currentQuestion + 1 < basicHiraganaQuestions.length) {
-  //     setCurrentQuestion(currentQuestion + 1);
-  //   } else {
-  //     setFinalResult(true);
-  //   }
-  // };
 
-  // const restartGame = () => {
-  //   setScore(0);
-  //   setCurrentQuestion(0);
-  //   setFinalResult(false);
-  // };
+
+  // const basicHiragana = [
+  //   'あ', 'い', 'う', 'え', 'お',
+  //   'か', 'き', 'く', 'け', 'こ',
+  //   'さ', 'し', 'す', 'せ', 'そ',
+  //   'た', 'ち', 'つ', 'て', 'と',
+  //   'な', 'に', 'ぬ', 'ね', 'の',
+  //   'は', 'ひ', 'ふ', 'へ', 'ほ',
+  //   'ま', 'み', 'む', 'め', 'も',
+  //   'や', 'ゆ', 'よ',
+  //   'ら', 'り', 'る', 'れ', 'ろ',
+  //   'わ','を','ん',
+  // ]
+  
+  // const advancedHiragana = [...basicHiragana,
+  //   'が', 'ぎ', 'ぐ', 'げ', 'ご',
+  //   'ざ', 'じ', 'ず', 'ぜ', 'ぞ',
+  //   'だ', 'ぢ', 'づ', 'で', 'ど',
+  //   'ば', 'び', 'ぶ', 'べ', 'ぼ',
+  //   'ぱ', 'ぴ', 'ぷ', 'ぺ', 'ぽ',
+  // ]

@@ -1,4 +1,5 @@
 import React from "react";
+import { basicHiraganaQuestions } from "../hiragana";
 import Card from "./Card";
 
 const HiraganaEndPage = ({
@@ -18,6 +19,8 @@ const HiraganaEndPage = ({
 const ReturnHome = () => {
   setShowHiraganaEndPage(false);
   setShowStartPage(true);
+  setScore(0);
+  setCurrentQuestion(0);
 }
 
 const RestartHiraganaQuiz = () => {
@@ -26,6 +29,8 @@ const RestartHiraganaQuiz = () => {
   setScore(0);
   setCurrentQuestion(0);
 }
+
+const ScorePercentage = Math.round(score / basicHiraganaQuestions.length * 100)
 
   return (
     <Card>
@@ -43,8 +48,8 @@ const RestartHiraganaQuiz = () => {
           <img className="Cat1" src="images/cat1.png" alt="cat1" />
         </div>
         <div className="BottomContainer">
-          <p className="">Final Score: {score}/46</p>
-          <p className="">85%</p>
+          <p className="">Final Score: {score}/{basicHiraganaQuestions.length}</p>
+          <p className="">{ScorePercentage}% Correct</p>
         </div>
       </div>
 

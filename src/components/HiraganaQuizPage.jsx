@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import {basicHiraganaQuestions, shuffleQuestions} from "../hiragana";
 
 const HiraganaQuizPage = ({
   setShowStartPage,
@@ -13,13 +14,8 @@ const HiraganaQuizPage = ({
   setScore,
   score,
   currentQuestion,
-
+  setShuffleQuestion,
 }) => {
-  const basicHiragana = ["あ", "い", "う", "え", "お"];
-  const basicAnswers = ["a", "i", "u", "e", "o"];
-
-  const randomQuestion = basicHiragana.sort(() => 0.5 - Math.random());
-  const randomAnswer = basicAnswers.sort(() => 0.5 - Math.random());
 
 
   const RestartHiraganaQuiz = () => {
@@ -32,33 +28,59 @@ const HiraganaQuizPage = ({
     setShowQuitHiraganaPage(true);
   };
 
-  
+  const handleClick = (isCorrect) => {
+    if (currentQuestion + 1 < basicHiraganaQuestions.length) {
+      if (isCorrect) {
+        setScore(score + 1);
+      }
+      setCurrentQuestion(currentQuestion + 1);
+    } else {
+      if (isCorrect) {
+        setScore(score + 1);
+      }
+      setShowHiraganaQuizPage(false);
+      setShowHiraganaEndPage(true);
+    }
+  };
+
 
   return (
     <Card>
       <div className="HeaderFooter">
-        <button onClick={RestartHiraganaQuiz} >Restart</button>
+        <button onClick={RestartHiraganaQuiz}>Restart</button>
         <button onClick={QuitHiraganaQuiz}>Quit</button>
       </div>
       <main className="MainContainer">
         <div className="TopContainer">
           <div className="SpeechBubble">
-            <h2 className="">{randomQuestion[0]}</h2>
+            <h2 className="">
+              {basicHiraganaQuestions[currentQuestion].questionText}
+            </h2>
           </div>
 
           <img className="Cat1" src="images/cat1.png" alt="cat1" />
         </div>
         <div className="BottomContainer">
-          <button className="Buttons">{randomAnswer[0]}</button>
-          <button className="Buttons">{randomAnswer[1]}</button>
-          <button className="Buttons">{randomAnswer[2]}</button>
-          <button className="Buttons">{randomAnswer[3]}</button>
+          {basicHiraganaQuestions[currentQuestion].answerOptions.map(
+            (answer, index) => (
+              <button
+                key={index}
+                onClick={() => handleClick(answer.isCorrect)}
+                className="Buttons"
+              >
+                {answer.text}
+              </button>
+            )
+          )}
+
         </div>
       </main>
 
       <div className="HeaderFooter">
         <p>Score: {score}</p>
-        <p>Question: {currentQuestion}/46</p>
+        <p>
+          Question: {currentQuestion + 1}/{basicHiraganaQuestions.length}
+        </p>
       </div>
     </Card>
   );
