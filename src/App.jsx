@@ -1,41 +1,37 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import HiraganaEndPage from "./components/HiraganaEndPage";
-import HiraganaStudyPage from "./components/HiraganaStudyPage";
-import KatakanaStudyPage from "./components/KatakanaStudyPage";
-import HiraganaQuizPage from "./components/HiraganaQuizPage";
-import KatakanaQuizPage from "./components/KatakanaQuizPage";
+import { useState } from "react";
 import StartPage from "./components/StartPage";
+
+import HiraganaQuizPage from "./components/HiraganaQuizPage";
+import HiraganaStudyPage from "./components/HiraganaStudyPage";
+import HiraganaEndPage from "./components/HiraganaEndPage";
 import RestartHiraganaPage from "./components/RestartHiraganaPage";
 import QuitHiraganaPage from "./components/QuitHiraganaPage";
-import HashLoader from "react-spinners/ClipLoader";
+
+import KatakanaQuizPage from "./components/KatakanaQuizPage";
+import KatakanaStudyPage from "./components/KatakanaStudyPage";
+import KatakanaEndPage from "./components/KatakanaEndPage";
+import RestartKatakanaPage from "./components/RestartKatakanaPage";
+import QuitKatakanaPage from "./components/QuitKatakanaPage";
 
 function App() {
+
   const [showStartPage, setShowStartPage] = useState(true);
 
   const [showHiraganaQuizPage, setShowHiraganaQuizPage] = useState(false);
   const [showHiraganaStudyPage, setShowHiraganaStudyPage] = useState(false);
   const [showHiraganaEndPage, setShowHiraganaEndPage] = useState(false);
-
   const [showRestartHiraganaPage, setShowRestartHiraganaPage] = useState(false);
   const [showQuitHiraganaPage, setShowQuitHiraganaPage] = useState(false);
-  
-  const [loading, setLoading] = useState(false);
+
+  const [showKatakanaStudyPage, setShowKatakanaStudyPage] = useState(false);
+  const [showKatakanaQuizPage, setShowKatakanaQuizPage] = useState(false);
+  const [showKatakanaEndPage, setShowKatakanaEndPage] = useState(false);
+  const [showRestartKatakanaPage, setShowRestartKatakanaPage] = useState(false);
+  const [showQuitKatakanaPage, setShowQuitKatakanaPage] = useState(false);
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
-
   const [score, setScore] = useState(0);
-
-
-  // const [showKatakanaStudyPage, setShowKatakanaStudyPage] = useState(false);
-  // const [showKatakanaQuizPage, setShowKatakanaQuizPage] = useState(false);
-
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  }, []);
 
   return (
     <>
@@ -47,11 +43,15 @@ function App() {
           setShowHiraganaEndPage={setShowHiraganaEndPage}
           setShowRestartHiraganaPage={setShowRestartHiraganaPage}
           setShowQuitHiraganaPage={setShowQuitHiraganaPage}
-      
           setCurrentQuestion={setCurrentQuestion}
           setScore={setScore}
           score={score}
           currentQuestion={currentQuestion}
+          setShowKatakanaStudyPage={setShowKatakanaStudyPage}
+          setShowKatakanaQuizPage={setShowKatakanaQuizPage}
+          setShowRestartKatakanaPage={setShowRestartKatakanaPage}
+          setShowQuitKatakanaPage={setShowQuitKatakanaPage}
+          setShowKatakanaEndPage={setShowKatakanaEndPage}
         />
       )}
       {showHiraganaQuizPage && (
@@ -62,11 +62,11 @@ function App() {
           setShowHiraganaEndPage={setShowHiraganaEndPage}
           setShowRestartHiraganaPage={setShowRestartHiraganaPage}
           setShowQuitHiraganaPage={setShowQuitHiraganaPage}
-   
           setCurrentQuestion={setCurrentQuestion}
           setScore={setScore}
           score={score}
           currentQuestion={currentQuestion}
+    
         />
       )}
 
@@ -78,12 +78,11 @@ function App() {
           setShowHiraganaEndPage={setShowHiraganaEndPage}
           setShowRestartHiraganaPage={setShowRestartHiraganaPage}
           setShowQuitHiraganaPage={setShowQuitHiraganaPage}
-
           setCurrentQuestion={setCurrentQuestion}
           setScore={setScore}
           score={score}
           currentQuestion={currentQuestion}
- 
+       
         />
       )}
 
@@ -95,12 +94,10 @@ function App() {
           setShowHiraganaEndPage={setShowHiraganaEndPage}
           setShowRestartHiraganaPage={setShowRestartHiraganaPage}
           setShowQuitHiraganaPage={setShowQuitHiraganaPage}
-
           setCurrentQuestion={setCurrentQuestion}
           setScore={setScore}
           score={score}
           currentQuestion={currentQuestion}
-  
         />
       )}
 
@@ -112,12 +109,10 @@ function App() {
           setShowHiraganaEndPage={setShowHiraganaEndPage}
           setShowRestartHiraganaPage={setShowRestartHiraganaPage}
           setShowQuitHiraganaPage={setShowQuitHiraganaPage}
-
           setCurrentQuestion={setCurrentQuestion}
           setScore={setScore}
           score={score}
           currentQuestion={currentQuestion}
-
         />
       )}
 
@@ -129,18 +124,85 @@ function App() {
           setShowHiraganaEndPage={setShowHiraganaEndPage}
           setShowRestartHiraganaPage={setShowRestartHiraganaPage}
           setShowQuitHiraganaPage={setShowQuitHiraganaPage}
-
           setCurrentQuestion={setCurrentQuestion}
           setScore={setScore}
           score={score}
           currentQuestion={currentQuestion}
-
         />
       )}
 
-      {/* {showKatakanaQuizPage && <KatakanaQuizPage />}
-      {showKatakanaStudyPage && <KatakanaStudyPage />} */}
+      {showKatakanaQuizPage && (
+        <KatakanaQuizPage
+          setShowStartPage={setShowStartPage}
+          setCurrentQuestion={setCurrentQuestion}
+          setScore={setScore}
+          score={score}
+          currentQuestion={currentQuestion}
+          setShowKatakanaStudyPage={setShowKatakanaStudyPage}
+          setShowKatakanaQuizPage={setShowKatakanaQuizPage}
+          setShowRestartKatakanaPage={setShowRestartKatakanaPage}
+          setShowQuitKatakanaPage={setShowQuitKatakanaPage}
+          setShowKatakanaEndPage={setShowKatakanaEndPage}
+        />
+      )}
+      {showKatakanaStudyPage && (
+        <KatakanaStudyPage
+          setShowStartPage={setShowStartPage}
+          setCurrentQuestion={setCurrentQuestion}
+          setScore={setScore}
+          score={score}
+          currentQuestion={currentQuestion}
+          setShowKatakanaStudyPage={setShowKatakanaStudyPage}
+          setShowKatakanaQuizPage={setShowKatakanaQuizPage}
+          setShowRestartKatakanaPage={setShowRestartKatakanaPage}
+          setShowQuitKatakanaPage={setShowQuitKatakanaPage}
+          setShowKatakanaEndPage={setShowKatakanaEndPage}
+        />
+      )}
 
+      {showQuitKatakanaPage && (
+        <QuitKatakanaPage
+          setShowStartPage={setShowStartPage}
+          setCurrentQuestion={setCurrentQuestion}
+          setScore={setScore}
+          score={score}
+          currentQuestion={currentQuestion}
+          setShowKatakanaStudyPage={setShowKatakanaStudyPage}
+          setShowKatakanaQuizPage={setShowKatakanaQuizPage}
+          setShowRestartKatakanaPage={setShowRestartKatakanaPage}
+          setShowQuitKatakanaPage={setShowQuitKatakanaPage}
+          setShowKatakanaEndPage={setShowKatakanaEndPage}
+        />
+      )}
+      {showRestartKatakanaPage && (
+        <RestartKatakanaPage
+          setShowStartPage={setShowStartPage}
+          setCurrentQuestion={setCurrentQuestion}
+          setScore={setScore}
+          score={score}
+          currentQuestion={currentQuestion}
+          setShowKatakanaStudyPage={setShowKatakanaStudyPage}
+          setShowKatakanaQuizPage={setShowKatakanaQuizPage}
+          setShowRestartKatakanaPage={setShowRestartKatakanaPage}
+          setShowQuitKatakanaPage={setShowQuitKatakanaPage}
+          setShowKatakanaEndPage={setShowKatakanaEndPage}
+        />
+      )}
+
+      {showKatakanaEndPage && (
+        <KatakanaEndPage
+          setShowStartPage={setShowStartPage}
+          setCurrentQuestion={setCurrentQuestion}
+          setScore={setScore}
+          score={score}
+          currentQuestion={currentQuestion}
+          setShowKatakanaStudyPage={setShowKatakanaStudyPage}
+          setShowKatakanaQuizPage={setShowKatakanaQuizPage}
+          setShowRestartKatakanaPage={setShowRestartKatakanaPage}
+          setShowQuitKatakanaPage={setShowQuitKatakanaPage}
+          setShowKatakanaEndPage={setShowKatakanaEndPage}
+        />
+      )}
     </>
   );
 }

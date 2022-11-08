@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import { basicHiraganaQuestions, shuffleQuestions } from "../hiragana";
+import { basicKatakanaQuestions } from "../katakana";
 
 const StartPage = ({
   setShowStartPage,
@@ -15,6 +16,8 @@ const StartPage = ({
   score,
   currentQuestion,
   setShuffleQuestion,
+  setShowKatakanaQuizPage,
+  setShowKatakanaStudyPage,
 }) => {
   const StartHiraganaQuiz = () => {
     setShowStartPage(false);
@@ -27,15 +30,16 @@ const StartPage = ({
     setShowHiraganaStudyPage(true);
   };
 
-  // const StartKatakanaQuiz = () => {
-  //   setShowStartPage(false);
-  //   setShowKatakanaQuizPage(true);
-  // };
+  const StartKatakanaQuiz = () => {
+    setShowStartPage(false);
+    setShowKatakanaQuizPage(true);
+    shuffleQuestions(basicKatakanaQuestions)
+  };
 
-  // const StartKatakanaStudy = () => {
-  //   setShowStartPage(false);
-  //   setShowKatakanaStudyPage(true);
-  // };
+  const StartKatakanaStudy = () => {
+    setShowStartPage(false);
+    setShowKatakanaStudyPage(true);
+  };
 
   return (
     <>
@@ -53,12 +57,12 @@ const StartPage = ({
             <button onClick={StartHiraganaStudy} className="Buttons">
               Hiragana Study
             </button>
-            {/* <button onClick={StartKatakanaQuiz} className="Buttons">
+            <button onClick={StartKatakanaQuiz} className="Buttons">
               Katakana Quiz
             </button>
             <button onClick={StartKatakanaStudy} className="Buttons">
               Katakana Study
-            </button> */}
+            </button>
           </div>
         </main>
         <footer className="HeaderFooter">by Stuey</footer>

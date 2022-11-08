@@ -14,6 +14,12 @@ const RestartHiraganaPage = ({
   setScore,
   score,
   currentQuestion,
+  setShuffleQuestion,
+  setShowKatakanaQuizPage,
+  setShowKatakanaStudyPage,
+  setShowRestartKatakanaPage,
+  setShowQuitKatakanaPage,
+  setShowKatakanaEndPage,
 }) => {
   const RestartQuiz = () => {
     setShowRestartHiraganaPage(false);

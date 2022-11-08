@@ -2,45 +2,41 @@ import React from "react";
 import Card from "./Card";
 import { basicKatakanaQuestions, shuffleQuestions } from "../katakana";
 
-const QuitKatakanaPage = ({
-  
-  setShowLoadingPage,
+const RestartKatakanaPage = ({
   setCurrentQuestion,
   setScore,
-  score,
-  currentQuestion,
-  setShuffleQuestion,
   setShowKatakanaQuizPage,
   setShowKatakanaStudyPage,
   setShowRestartKatakanaPage,
   setShowQuitKatakanaPage,
   setShowKatakanaEndPage,
 }) => {
-  const QuitKatakanaQuiz = () => {
-    setShowQuitKatakanaPage(false);
-    setShowKatakanaEndPage(true);
+  const RestartQuiz = () => {
+    setShowRestartKatakanaPage(false);
+    setShowKatakanaQuizPage(true);
+    setScore(0);
+    setCurrentQuestion(0);
     shuffleQuestions(basicKatakanaQuestions);
   };
 
-  const ReturnToKatakanaQuiz = () => {
-    setShowQuitKatakanaPage(false);
+  const ContinueQuiz = () => {
+    setShowRestartKatakanaPage(false);
     setShowKatakanaQuizPage(true);
   };
-
   return (
     <Card>
       <div className="HeaderFooter"></div>
       <main className="MainContainer">
         <div className="EndPageTop">
-          <div className="SpeechBubble">Are you sure buddy?</div>
+          <div className="SpeechBubble">Restart the Katakana quiz?</div>
           <img className="Cat1" src="images/cat1.png" alt="cat1" />
         </div>
         <div className="BottomContainer">
-          <button onClick={QuitKatakanaQuiz} className="Buttons">
-            Yep!
+          <button onClick={RestartQuiz} className="Buttons">
+            Heck Yes!
           </button>
-          <button onClick={ReturnToKatakanaQuiz} className="Buttons">
-            Nope!
+          <button onClick={ContinueQuiz} className="Buttons">
+            Um..No!
           </button>
         </div>
       </main>
@@ -50,4 +46,4 @@ const QuitKatakanaPage = ({
   );
 };
 
-export default QuitKatakanaPage;
+export default RestartKatakanaPage;

@@ -1,21 +1,19 @@
 import React from "react";
 import Card from "./Card";
-import {basicHiraganaQuestions, shuffleQuestions} from "../hiragana";
+import { basicHiraganaQuestions } from "../hiragana";
+import { useState } from "react";
 
 const HiraganaQuizPage = ({
-  setShowStartPage,
   setShowHiraganaQuizPage,
-  setShowHiraganaStudyPage,
   setShowHiraganaEndPage,
   setShowRestartHiraganaPage,
   setShowQuitHiraganaPage,
-  setShowLoadingPage,
   setCurrentQuestion,
   setScore,
   score,
   currentQuestion,
-  setShuffleQuestion,
 }) => {
+
 
 
   const RestartHiraganaQuiz = () => {
@@ -31,7 +29,7 @@ const HiraganaQuizPage = ({
   const handleClick = (isCorrect) => {
     if (currentQuestion + 1 < basicHiraganaQuestions.length) {
       if (isCorrect) {
-        setScore(score + 1);
+        setScore(score + 1);  
       }
       setCurrentQuestion(currentQuestion + 1);
     } else {
@@ -42,7 +40,6 @@ const HiraganaQuizPage = ({
       setShowHiraganaEndPage(true);
     }
   };
-
 
   return (
     <Card>
@@ -62,9 +59,9 @@ const HiraganaQuizPage = ({
         </div>
         <div className="BottomContainer">
           {basicHiraganaQuestions[currentQuestion].answerOptions.map(
-            (answer, index) => (
+            (answer) => (
               <button
-                key={index}
+                key={answer.id}
                 onClick={() => handleClick(answer.isCorrect)}
                 className="Buttons"
               >
@@ -72,7 +69,6 @@ const HiraganaQuizPage = ({
               </button>
             )
           )}
-
         </div>
       </main>
 

@@ -6,10 +6,6 @@ body {
   font-family: "Yomogi", cursive;
 }
 
-/* h2 {
-  font-family: 'Kosugi Maru', sans-serif;
-} */
-
 .Card {
   @apply flex flex-col justify-between text-center w-screen h-screen;
 }
@@ -43,35 +39,42 @@ body {
 }
 
 .HiraganaMainContainer {
-  @apply bg-green h-full flex flex-col justify-center
-  
+  @apply bg-green h-full flex flex-col justify-center;
 }
 
 .KatakanaMainContainer {
-  @apply bg-blue h-full flex flex-col justify-center
-
+  @apply bg-blue h-full flex flex-col justify-center;
 }
 
 .KanaGridContainer {
-  @apply grid grid-cols-5 gap-2 w-5/6 mx-auto
+  @apply grid grid-cols-5 gap-2 w-5/6 mx-auto;
 }
 
 .KanaTitle {
-  @apply bg-pureWhite w-5/6 flex justify-center items-center mx-auto h-12 rounded-xl text-2xl font-bold
+  @apply bg-pureWhite w-5/6 flex justify-center items-center mx-auto h-12 rounded-xl text-2xl font-bold;
 }
 
 .KanaGridItem {
-  @apply bg-pureWhite rounded-xl p-1
+  @apply bg-pureWhite rounded-xl p-1;
 }
 
 .Romaji {
-  @apply  text-sm
+  @apply text-sm;
 }
 
 .Kana {
-  @apply text-2xl
+  @apply text-2xl;
 }
 
 .HeaderFooter {
   @apply bg-yellow h-14 flex justify-around items-center text-xl;
+}
+
+
+.CorrectButton {
+  @apply bg-green
+}
+
+.IncorrectButton {
+  @apply bg-green
 }

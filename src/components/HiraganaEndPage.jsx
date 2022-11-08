@@ -14,6 +14,11 @@ const HiraganaEndPage = ({
   setScore,
   score,
   currentQuestion,
+  setShuffleQuestion,
+  setShowKatakanaQuizPage,
+  setShowKatakanaStudyPage,
+  setShowRestartKatakanaPage,
+  setShowQuitKatakanaPage,
 }) => {
 
 const ReturnHome = () => {

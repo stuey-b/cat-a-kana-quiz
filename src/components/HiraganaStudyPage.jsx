@@ -14,6 +14,9 @@ const HiraganaStudyPage = ({
   setScore,
   score,
   currentQuestion,
+  setShuffleQuestion,
+  setShowKatakanaQuizPage,
+  setShowKatakanaStudyPage,
 }) => {
   
   const ReturnHome = () => {
@@ -34,7 +37,7 @@ const HiraganaStudyPage = ({
         <button onClick={HiraganaQuiz}>Quiz</button>
       </div>
       <main className="HiraganaMainContainer">
-        <div className="KanaTitle">Hiragana</div>
+        <div className="KanaTitle">hiragana</div>
         <div className="KanaGridContainer">
           <div className="KanaGridItem">
             <p className="Romaji">a</p>
@@ -222,7 +225,7 @@ const HiraganaStudyPage = ({
           </div>
         </div>
       </main>
-      {/* <div className="HeaderFooter"></div> */}
+ 
     </Card>
   );
 };
