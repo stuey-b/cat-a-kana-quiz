@@ -6,10 +6,8 @@ const RestartKatakanaPage = ({
   setCurrentQuestion,
   setScore,
   setShowKatakanaQuizPage,
-  setShowKatakanaStudyPage,
   setShowRestartKatakanaPage,
-  setShowQuitKatakanaPage,
-  setShowKatakanaEndPage,
+
 }) => {
   const RestartQuiz = () => {
     setShowRestartKatakanaPage(false);

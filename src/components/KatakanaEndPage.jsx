@@ -4,21 +4,10 @@ import Card from "./Card";
 
 const KatakanaEndPage = ({
   setShowStartPage,
-  setShowHiraganaQuizPage,
-  setShowHiraganaStudyPage,
-  setShowHiraganaEndPage,
-  setShowRestartHiraganaPage,
-  setShowQuitHiraganaPage,
-  setShowLoadingPage,
   setCurrentQuestion,
   setScore,
   score,
-  currentQuestion,
-  setShuffleQuestion,
   setShowKatakanaQuizPage,
-  setShowKatakanaStudyPage,
-  setShowRestartKatakanaPage,
-  setShowQuitKatakanaPage,
   setShowKatakanaEndPage,
 }) => {
   const ReturnHome = () => {

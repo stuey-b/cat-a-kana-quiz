@@ -24,8 +24,8 @@ function App() {
   const [showRestartHiraganaPage, setShowRestartHiraganaPage] = useState(false);
   const [showQuitHiraganaPage, setShowQuitHiraganaPage] = useState(false);
 
-  const [showKatakanaStudyPage, setShowKatakanaStudyPage] = useState(false);
   const [showKatakanaQuizPage, setShowKatakanaQuizPage] = useState(false);
+  const [showKatakanaStudyPage, setShowKatakanaStudyPage] = useState(false);
   const [showKatakanaEndPage, setShowKatakanaEndPage] = useState(false);
   const [showRestartKatakanaPage, setShowRestartKatakanaPage] = useState(false);
   const [showQuitKatakanaPage, setShowQuitKatakanaPage] = useState(false);

@@ -3,23 +3,9 @@ import Card from "./Card";
 import { basicHiraganaQuestions, shuffleQuestions } from "../hiragana";
 
 const QuitHiraganaPage = ({
-  setShowStartPage,
   setShowHiraganaQuizPage,
-  setShowHiraganaStudyPage,
   setShowHiraganaEndPage,
-  setShowRestartHiraganaPage,
   setShowQuitHiraganaPage,
-  setShowLoadingPage,
-  setCurrentQuestion,
-  setScore,
-  score,
-  currentQuestion,
-  setShuffleQuestion,
-  setShowKatakanaQuizPage,
-  setShowKatakanaStudyPage,
-  setShowRestartKatakanaPage,
-  setShowQuitKatakanaPage,
-  setShowKatakanaEndPage,
   
 }) => {
   const QuitHiraganaQuiz = () => {

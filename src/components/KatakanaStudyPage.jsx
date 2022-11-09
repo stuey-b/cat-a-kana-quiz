@@ -4,17 +4,6 @@ import { basicKatakanaQuestions, shuffleQuestions } from "../katakana";
 
 const KatakanaStudyPage = ({
   setShowStartPage,
-  setShowHiraganaQuizPage,
-  setShowHiraganaStudyPage,
-  setShowHiraganaEndPage,
-  setShowRestartHiraganaPage,
-  setShowQuitHiraganaPage,
-  setShowLoadingPage,
-  setCurrentQuestion,
-  setScore,
-  score,
-  currentQuestion,
-  setShuffleQuestion,
   setShowKatakanaQuizPage,
   setShowKatakanaStudyPage,
 }) => {

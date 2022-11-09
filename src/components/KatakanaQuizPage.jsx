@@ -3,20 +3,11 @@ import Card from "./Card";
 import { basicKatakanaQuestions } from "../katakana";
 
 const KatakanaQuizPage = ({
-  setShowStartPage,
-  setShowHiraganaQuizPage,
-  setShowHiraganaStudyPage,
-  setShowHiraganaEndPage,
-  setShowRestartHiraganaPage,
-  setShowQuitHiraganaPage,
-  setShowLoadingPage,
   setCurrentQuestion,
   setScore,
   score,
   currentQuestion,
-  setShuffleQuestion,
   setShowKatakanaQuizPage,
-  setShowKatakanaStudyPage,
   setShowRestartKatakanaPage,
   setShowQuitKatakanaPage,
   setShowKatakanaEndPage,

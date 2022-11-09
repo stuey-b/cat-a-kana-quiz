@@ -3,16 +3,7 @@ import Card from "./Card";
 import { basicKatakanaQuestions, shuffleQuestions } from "../katakana";
 
 const QuitKatakanaPage = ({
-  
-  setShowLoadingPage,
-  setCurrentQuestion,
-  setScore,
-  score,
-  currentQuestion,
-  setShuffleQuestion,
   setShowKatakanaQuizPage,
-  setShowKatakanaStudyPage,
-  setShowRestartKatakanaPage,
   setShowQuitKatakanaPage,
   setShowKatakanaEndPage,
 }) => {

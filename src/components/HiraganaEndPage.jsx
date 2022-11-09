@@ -5,20 +5,10 @@ import Card from "./Card";
 const HiraganaEndPage = ({
   setShowStartPage,
   setShowHiraganaQuizPage,
-  setShowHiraganaStudyPage,
   setShowHiraganaEndPage,
-  setShowRestartHiraganaPage,
-  setShowQuitHiraganaPage,
-  setShowLoadingPage,
   setCurrentQuestion,
   setScore,
   score,
-  currentQuestion,
-  setShuffleQuestion,
-  setShowKatakanaQuizPage,
-  setShowKatakanaStudyPage,
-  setShowRestartKatakanaPage,
-  setShowQuitKatakanaPage,
 }) => {
 
 const ReturnHome = () => {

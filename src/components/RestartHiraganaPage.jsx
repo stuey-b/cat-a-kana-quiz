@@ -3,23 +3,11 @@ import Card from "./Card";
 import { basicHiraganaQuestions, shuffleQuestions } from "../hiragana";
 
 const RestartHiraganaPage = ({
-  setShowStartPage,
   setShowHiraganaQuizPage,
-  setShowHiraganaStudyPage,
-  setShowHiraganaEndPage,
   setShowRestartHiraganaPage,
-  setShowQuitHiraganaPage,
-  setShowLoadingPage,
   setCurrentQuestion,
   setScore,
-  score,
-  currentQuestion,
-  setShuffleQuestion,
-  setShowKatakanaQuizPage,
-  setShowKatakanaStudyPage,
-  setShowRestartKatakanaPage,
-  setShowQuitKatakanaPage,
-  setShowKatakanaEndPage,
+
 }) => {
   const RestartQuiz = () => {
     setShowRestartHiraganaPage(false);

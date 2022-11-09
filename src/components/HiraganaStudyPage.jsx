@@ -6,17 +6,7 @@ const HiraganaStudyPage = ({
   setShowStartPage,
   setShowHiraganaQuizPage,
   setShowHiraganaStudyPage,
-  setShowHiraganaEndPage,
-  setShowRestartHiraganaPage,
-  setShowQuitHiraganaPage,
-  setShowLoadingPage,
-  setCurrentQuestion,
-  setScore,
-  score,
-  currentQuestion,
-  setShuffleQuestion,
-  setShowKatakanaQuizPage,
-  setShowKatakanaStudyPage,
+ 
 }) => {
   
   const ReturnHome = () => {
