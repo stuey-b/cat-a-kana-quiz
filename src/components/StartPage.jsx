@@ -35,11 +35,11 @@ const StartPage = ({
   return (
     <>
       <Card>
-        <header className="HeaderFooter"></header>
+   
         <main className="MainContainer">
           <div className="TopContainer">
             <div className="SpeechBubble">Cat-a-Kana</div>
-            <img className="Cat1" src="images/cat1.png" alt="cat1" />
+            <img className="CatHead" src="images/cat-main.png" alt="cat1"/>
           </div>
           <div className="BottomContainer">
             <button onClick={StartHiraganaQuiz} className="Buttons">
@@ -56,7 +56,6 @@ const StartPage = ({
             </button>
           </div>
         </main>
-        <footer className="HeaderFooter">by Stuey</footer>
       </Card>
     </>
   );
