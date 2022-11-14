@@ -34,11 +34,21 @@ const KatakanaEndPage = ({
         </div>
         <div className="MainContainer">
           <div className="EndPageTop">
-            <div className="SpeechBubble">
-              Wow!
-              <br />
-              DUDE!
-            </div>
+          <div className="SpeechBubble">
+            {score === 46
+              ? "You are a kana GOD!!"
+              : score >= 40
+              ? "You are AMAZING!"
+              : score >= 30
+              ? "You did pretty well!"
+              : score >= 20
+              ? "Nice try. Keep practicing!"
+              : score >= 10
+              ? "Don't give up! You got this."
+              : score >= 1
+              ? "You might wanna study.."
+              : "OOF.You NEED to study pal"}
+          </div>
             <img className="Cat1" src="images/cat1.png" alt="cat1" />
           </div>
           <div className="BottomContainer">
