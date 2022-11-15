@@ -30,11 +30,11 @@ const HiraganaEndPage = ({
 
   return (
     <Card>
+      <main className="MainContainer">
       <div className="HeaderFooter">
         <button onClick={RestartHiraganaQuiz}>Retry</button>
         <button onClick={ReturnHome}>Home</button>
       </div>
-      <div className="MainContainer">
         <div className="EndPageTop">
           <div className="SpeechBubble">
             {score === 46
@@ -53,21 +53,21 @@ const HiraganaEndPage = ({
           </div>
 
           <img
-            className="Cat1"
+            className="CatHead"
             src={
               score === 46
-                ? "You are a kana GOD!!"
+                ? "images/cat-100.png"
                 : score >= 40
-                ? "You are AMAZING!"
+                ? "images/cat-40.png"
                 : score >= 30
-                ? "You did pretty well!"
+                ? "images/cat-30.png"
                 : score >= 20
-                ? "Nice try. Keep practicing!"
+                ? "images/cat-20.png"
                 : score >= 10
-                ? "Don't give up! You got this."
+                ? "images/cat-10.png"
                 : score >= 1
-                ? "You might wanna study.."
-                : "OOF.You NEED to study pal"
+                ? "images/cat-1.png"
+                : "images/cat-0.png"
             }
             alt="cats"
           />
@@ -78,9 +78,9 @@ const HiraganaEndPage = ({
           </p>
           <p className="FinalScore">{ScorePercentage}% Correct</p>
         </div>
-      </div>
+        <div className="HeaderFooter"></div>
+      </main>
 
-      <div className="HeaderFooter"></div>
     </Card>
   );
 };

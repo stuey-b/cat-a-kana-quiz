@@ -37,24 +37,26 @@ const StartPage = ({
       <Card>
    
         <main className="MainContainer">
+        <div className="HeaderFooter"></div>
           <div className="TopContainer">
-            <div className="SpeechBubble">Cat-a-Kana</div>
-            <img className="CatHead" src="images/cat-main.png" alt="cat1"/>
+            <div className="SpeechBubble">cat-a-kana</div>
+            <img className="CatHead" src="images/cat-main.png" alt="cat"/>
           </div>
           <div className="BottomContainer">
             <button onClick={StartHiraganaQuiz} className="Buttons">
-              Hiragana Quiz
+              hiragana quiz
             </button>
             <button onClick={StartHiraganaStudy} className="Buttons">
-              Hiragana Study
+              hiragana study
             </button>
             <button onClick={StartKatakanaQuiz} className="Buttons">
-              Katakana Quiz
+              katakana quiz
             </button>
             <button onClick={StartKatakanaStudy} className="Buttons">
-              Katakana Study
+              katakana study
             </button>
           </div>
+          <div className="HeaderFooter"></div>
         </main>
       </Card>
     </>

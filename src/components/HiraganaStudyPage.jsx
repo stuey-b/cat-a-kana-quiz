@@ -22,11 +22,12 @@ const HiraganaStudyPage = ({
 
   return (
     <Card>
+    
+      <main className="HiraganaMainContainer">
       <div className="HeaderFooter">
         <button onClick={ReturnHome}>Home</button>
         <button onClick={HiraganaQuiz}>Quiz</button>
       </div>
-      <main className="HiraganaMainContainer">
         <div className="KanaTitle">hiragana</div>
         <div className="KanaGridContainer">
           <div className="KanaGridItem">
@@ -214,6 +215,7 @@ const HiraganaStudyPage = ({
             <p className="Kana">ん</p>
           </div>
         </div>
+        <div className="HeaderFooter"></div>
       </main>
  
     </Card>

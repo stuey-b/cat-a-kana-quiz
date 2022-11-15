@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "./Card";
 import { basicHiraganaQuestions } from "../hiragana";
-import { useState } from "react";
 
 const HiraganaQuizPage = ({
   setShowHiraganaQuizPage,
@@ -43,19 +42,17 @@ const HiraganaQuizPage = ({
 
   return (
     <Card>
+    
+      <main className="MainContainer">
       <div className="HeaderFooter">
         <button onClick={RestartHiraganaQuiz}>Restart</button>
         <button onClick={QuitHiraganaQuiz}>Quit</button>
       </div>
-      <main className="MainContainer">
         <div className="TopContainer">
           <div className="SpeechBubble">
-            <h2 className="">
-              {basicHiraganaQuestions[currentQuestion].questionText}
-            </h2>
+          {basicHiraganaQuestions[currentQuestion].questionText}
           </div>
-
-          <img className="Cat1" src="images/cat1.png" alt="cat1" />
+          <img className="CatHead" src="images/cat-main.png" alt="cat" />
         </div>
         <div className="BottomContainer">
           {basicHiraganaQuestions[currentQuestion].answerOptions.map(
@@ -64,22 +61,20 @@ const HiraganaQuizPage = ({
                 key={answer.id}
                 onClick={() => handleClick(answer.isCorrect) }
                 className="Buttons"
-            
-                
+
               >
                 {answer.text}
               </button>
             )
           )}
         </div>
+        <div className="HeaderFooter">
+        <p>Score: {score}</p>
+        <p>Question: {currentQuestion + 1}/{basicHiraganaQuestions.length}</p>
+      </div>
       </main>
 
-      <div className="HeaderFooter">
-        <p>Score: {score}</p>
-        <p>
-          Question: {currentQuestion + 1}/{basicHiraganaQuestions.length}
-        </p>
-      </div>
+      
     </Card>
   );
 };

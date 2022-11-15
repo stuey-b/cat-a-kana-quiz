@@ -6,16 +6,13 @@ body {
   font-family: "Yomogi", cursive;
 }
 
-.Card {
-  @apply flex flex-col justify-center text-center w-screen h-screen;
-}
 
 .MainContainer {
-  @apply bg-white h-full flex flex-col justify-evenly;
+  @apply bg-white flex flex-col justify-evenly text-center w-screen h-screen;
 }
 
 .TopContainer {
-  @apply bg-green h-1/2 py-8 flex flex-col gap-4 justify-evenly items-center rounded-b-3xl;
+  @apply bg-green h-1/2 py-8 flex flex-col justify-start items-center drop-shadow-sm border-b ;
 }
 
 .EndPageTop {
@@ -23,23 +20,23 @@ body {
 }
 
 .BottomContainer {
-  @apply bg-white flex flex-col justify-between gap-4;
+  @apply bg-white flex flex-col gap-4 py-8;
 }
 
 .SpeechBubble {
-  @apply bg-pureWhite w-5/6 rounded-3xl flex justify-center items-center mx-auto font-bold text-4xl py-12 ;
+  @apply bg-pureWhite w-5/6 rounded-lg flex justify-center items-center mx-auto font-bold text-4xl py-14 px-4 drop-shadow-sm border ;
 }
 
 .CatHead {
-  @apply h-2/3
+  @apply h-3/5 drop-shadow-sm -mt-2
 }
 
 .Buttons {
-  @apply bg-pureWhite w-4/6 text-xl py-2 rounded-xl border-solid border-2 border-blue mx-auto;
+  @apply bg-pureWhite w-4/6 text-2xl py-2 rounded-lg border-solid border mx-auto drop-shadow-sm;
 }
 
 .HiraganaMainContainer {
-  @apply bg-green h-full flex flex-col justify-center;
+  @apply bg-green h-screen flex flex-col justify-center text-center;
 }
 
 .KatakanaMainContainer {
@@ -47,15 +44,15 @@ body {
 }
 
 .KanaGridContainer {
-  @apply grid grid-cols-5 gap-2 w-5/6 mx-auto ;
+  @apply grid grid-cols-5 gap-2 w-5/6 mx-auto py-4 ;
 }
 
 .KanaTitle {
-  @apply bg-pureWhite w-5/6 flex justify-center items-center mx-auto h-12 rounded-xl text-2xl font-bold mb-4 -mt-4;
+  @apply bg-pureWhite w-5/6 flex justify-center items-center mx-auto rounded-lg text-2xl font-bold mt-4 py-2 border;
 }
 
 .KanaGridItem {
-  @apply bg-pureWhite rounded-xl p-1 -order-1;
+  @apply bg-pureWhite rounded-lg p-1 -order-1 border;
 }
 
 .Romaji {
@@ -63,9 +60,10 @@ body {
 }
 
 .Kana {
-  @apply text-2xl;
+  @apply text-xl;
 }
 
 .HeaderFooter {
-  @apply bg-yellow h-14 flex justify-around items-center text-xl;
+  @apply bg-yellow h-1/6 flex justify-around items-center text-xl drop-shadow-sm border-y ;
 }
+
