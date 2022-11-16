@@ -35,7 +35,7 @@ const StartPage = ({
   return (
     <>
       <Card>
-   
+      
         <main className="MainContainer">
         <div className="HeaderFooter"></div>
           <div className="TopContainer">
@@ -58,6 +58,7 @@ const StartPage = ({
           </div>
           <div className="HeaderFooter"></div>
         </main>
+        
       </Card>
     </>
   );

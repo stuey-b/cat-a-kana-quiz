@@ -6,9 +6,12 @@ body {
   font-family: "Yomogi", cursive;
 }
 
+.Card {
+  @apply bg-white flex flex-col border-x text-center justify-center h-screen;
+}
 
 .MainContainer {
-  @apply bg-white flex flex-col justify-evenly text-center w-screen h-screen;
+  @apply flex flex-col justify-evenly h-screen
 }
 
 .TopContainer {
@@ -16,35 +19,35 @@ body {
 }
 
 .EndPageTop {
-  @apply bg-teal h-2/3 py-8 flex flex-col gap-4 justify-evenly items-center rounded-b-3xl;
+  @apply bg-teal h-2/3 py-8 flex flex-col gap-4 items-center justify-start;
 }
 
 .BottomContainer {
-  @apply bg-white flex flex-col gap-4 py-8;
+  @apply bg-white flex flex-col gap-4 py-8 justify-center h-1/2;
 }
 
 .SpeechBubble {
-  @apply bg-pureWhite w-5/6 rounded-lg flex justify-center items-center mx-auto font-bold text-4xl py-14 px-4 drop-shadow-sm border ;
+  @apply bg-pureWhite w-4/5 rounded-lg flex justify-center mx-auto font-bold text-3xl py-10 px-4 drop-shadow-sm border;
 }
 
 .CatHead {
-  @apply h-3/5 drop-shadow-sm -mt-2
+  @apply h-64 drop-shadow-sm -mt-2
 }
 
 .Buttons {
-  @apply bg-pureWhite w-4/6 text-2xl py-2 rounded-lg border-solid border mx-auto drop-shadow-sm;
+  @apply bg-pureWhite w-4/6 text-xl py-2 rounded-lg border-solid border mx-auto drop-shadow-sm;
 }
 
 .HiraganaMainContainer {
-  @apply bg-green h-screen flex flex-col justify-center text-center;
+  @apply bg-green flex flex-col justify-center;
 }
 
 .KatakanaMainContainer {
-  @apply bg-blue h-full flex flex-col justify-center;
+  @apply bg-blue flex flex-col justify-center;
 }
 
 .KanaGridContainer {
-  @apply grid grid-cols-5 gap-2 w-5/6 mx-auto py-4 ;
+  @apply grid grid-cols-5 gap-2 w-5/6 mx-auto py-4;
 }
 
 .KanaTitle {
@@ -64,6 +67,10 @@ body {
 }
 
 .HeaderFooter {
-  @apply bg-yellow h-1/6 flex justify-around items-center text-xl drop-shadow-sm border-y ;
+  @apply bg-yellow h-16 py-4 flex justify-around items-center text-xl drop-shadow-sm border-y ;
+}
+
+.FinalScoreContainer {
+  @apply  flex flex-col text-2xl gap-2
 }
 
