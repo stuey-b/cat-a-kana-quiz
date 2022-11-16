@@ -14,7 +14,7 @@ const basicKatakanaQuestions = [
     questionText: "ア",
     answerOptions: [
       { id: 0, text: "ha", isCorrect: false },
-      { id: 1, text: "stu", isCorrect: false },
+      { id: 1, text: "su", isCorrect: false },
       { id: 2, text: "a", isCorrect: true },
       { id: 3, text: "shi", isCorrect: false },
     ],
@@ -23,7 +23,7 @@ const basicKatakanaQuestions = [
     questionText: "イ",
     answerOptions: [
       { id: 0, text: "", isCorrect: false },
-      { id: 1, text: "", isCorrect: true },
+      { id: 1, text: "i", isCorrect: true },
       { id: 2, text: "", isCorrect: false },
       { id: 3, text: "", isCorrect: false },
     ],
@@ -32,7 +32,7 @@ const basicKatakanaQuestions = [
     questionText: "ウ",
     answerOptions: [
       { id: 0, text: "", isCorrect: false },
-      { id: 1, text: "", isCorrect: false },
+      { id: 1, text: "u", isCorrect: true },
       { id: 2, text: "", isCorrect: false },
       { id: 3, text: "", isCorrect: false },
     ],
@@ -43,13 +43,13 @@ const basicKatakanaQuestions = [
       { id: 0, text: "", isCorrect: false },
       { id: 1, text: "", isCorrect: false },
       { id: 2, text: "", isCorrect: false },
-      { id: 3, text: "", isCorrect: false },
+      { id: 3, text: "e", isCorrect: true },
     ],
   },
   {
     questionText: "オ",
     answerOptions: [
-      { id: 0, text: "", isCorrect: false },
+      { id: 0, text: "o", isCorrect: true },
       { id: 1, text: "", isCorrect: false },
       { id: 2, text: "", isCorrect: false },
       { id: 3, text: "", isCorrect: false },
@@ -59,7 +59,7 @@ const basicKatakanaQuestions = [
     questionText: "カ",
     answerOptions: [
       { id: 0, text: "", isCorrect: false },
-      { id: 1, text: "", isCorrect: false },
+      { id: 1, text: "ka", isCorrect: true },
       { id: 2, text: "", isCorrect: false },
       { id: 3, text: "", isCorrect: false },
     ],
@@ -68,7 +68,7 @@ const basicKatakanaQuestions = [
     questionText: "キ",
     answerOptions: [
       { id: 0, text: "", isCorrect: false },
-      { id: 1, text: "", isCorrect: false },
+      { id: 1, text: "ki", isCorrect: true },
       { id: 2, text: "", isCorrect: false },
       { id: 3, text: "", isCorrect: false },
     ],
@@ -78,14 +78,14 @@ const basicKatakanaQuestions = [
     answerOptions: [
       { id: 0, text: "", isCorrect: false },
       { id: 1, text: "", isCorrect: false },
-      { id: 2, text: "", isCorrect: false },
+      { id: 2, text: "ku", isCorrect: true },
       { id: 3, text: "", isCorrect: false },
     ],
   },
   {
     questionText: "ケ",
     answerOptions: [
-      { id: 0, text: "", isCorrect: false },
+      { id: 0, text: "ke", isCorrect: true },
       { id: 1, text: "", isCorrect: false },
       { id: 2, text: "", isCorrect: false },
       { id: 3, text: "", isCorrect: false },
@@ -97,14 +97,14 @@ const basicKatakanaQuestions = [
       { id: 0, text: "", isCorrect: false },
       { id: 1, text: "", isCorrect: false },
       { id: 2, text: "", isCorrect: false },
-      { id: 3, text: "", isCorrect: false },
+      { id: 3, text: "ko", isCorrect: true },
     ],
   },
   {
     questionText: "サ",
     answerOptions: [
       { id: 0, text: "", isCorrect: false },
-      { id: 1, text: "", isCorrect: false },
+      { id: 1, text: "sa", isCorrect: true },
       { id: 2, text: "", isCorrect: false },
       { id: 3, text: "", isCorrect: false },
     ],
@@ -113,7 +113,7 @@ const basicKatakanaQuestions = [
     questionText: "シ",
     answerOptions: [
       { id: 0, text: "", isCorrect: false },
-      { id: 1, text: "", isCorrect: false },
+      { id: 1, text: "shi", isCorrect: true },
       { id: 2, text: "", isCorrect: false },
       { id: 3, text: "", isCorrect: false },
     ],
@@ -123,7 +123,7 @@ const basicKatakanaQuestions = [
     answerOptions: [
       { id: 0, text: "", isCorrect: false },
       { id: 1, text: "", isCorrect: false },
-      { id: 2, text: "", isCorrect: false },
+      { id: 2, text: "su", isCorrect: true },
       { id: 3, text: "", isCorrect: false },
     ],
   },
@@ -133,7 +133,7 @@ const basicKatakanaQuestions = [
       { id: 0, text: "", isCorrect: false },
       { id: 1, text: "", isCorrect: false },
       { id: 2, text: "", isCorrect: false },
-      { id: 3, text: "", isCorrect: false },
+      { id: 3, text: "se", isCorrect: true },
     ],
   },
   {
@@ -141,14 +141,14 @@ const basicKatakanaQuestions = [
     answerOptions: [
       { id: 0, text: "", isCorrect: false },
       { id: 1, text: "", isCorrect: false },
-      { id: 2, text: "", isCorrect: false },
+      { id: 2, text: "so", isCorrect: true },
       { id: 3, text: "", isCorrect: false },
     ],
   },
   {
     questionText: "タ",
     answerOptions: [
-      { id: 0, text: "", isCorrect: false },
+      { id: 0, text: "ta", isCorrect: true },
       { id: 1, text: "", isCorrect: false },
       { id: 2, text: "", isCorrect: false },
       { id: 3, text: "", isCorrect: false },
@@ -157,7 +157,7 @@ const basicKatakanaQuestions = [
   {
     questionText: "チ",
     answerOptions: [
-      { id: 0, text: "", isCorrect: false },
+      { id: 0, text: "chi", isCorrect: true },
       { id: 1, text: "", isCorrect: false },
       { id: 2, text: "", isCorrect: false },
       { id: 3, text: "", isCorrect: false },
@@ -169,7 +169,7 @@ const basicKatakanaQuestions = [
       { id: 0, text: "", isCorrect: false },
       { id: 1, text: "", isCorrect: false },
       { id: 2, text: "", isCorrect: false },
-      { id: 3, text: "", isCorrect: false },
+      { id: 3, text: "tsu", isCorrect: true },
     ],
   },
   {
@@ -177,7 +177,7 @@ const basicKatakanaQuestions = [
     answerOptions: [
       { id: 0, text: "", isCorrect: false },
       { id: 1, text: "", isCorrect: false },
-      { id: 2, text: "", isCorrect: false },
+      { id: 2, text: "te", isCorrect: true },
       { id: 3, text: "", isCorrect: false },
     ],
   },
@@ -185,15 +185,15 @@ const basicKatakanaQuestions = [
     questionText: "ト",
     answerOptions: [
       { id: 0, text: "ra", isCorrect: false },
-      { id: 1, text: "he", isCorrect: false },
+      { id: 1, text: "fu", isCorrect: false },
       { id: 2, text: "so", isCorrect: false },
-      { id: 3, text: "shi", isCorrect: true },
+      { id: 3, text: "to", isCorrect: true },
     ],
   },
   {
     questionText: "ナ",
     answerOptions: [
-      { id: 0, text: "", isCorrect: false },
+      { id: 0, text: "na", isCorrect: true },
       { id: 1, text: "", isCorrect: false },
       { id: 2, text: "", isCorrect: false },
       { id: 3, text: "", isCorrect: false },
@@ -205,7 +205,7 @@ const basicKatakanaQuestions = [
       { id: 0, text: "", isCorrect: false },
       { id: 1, text: "", isCorrect: false },
       { id: 2, text: "", isCorrect: false },
-      { id: 3, text: "", isCorrect: false },
+      { id: 3, text: "ni", isCorrect: true },
     ],
   },
   {
@@ -214,14 +214,14 @@ const basicKatakanaQuestions = [
       { id: 0, text: "", isCorrect: false },
       { id: 1, text: "", isCorrect: false },
       { id: 2, text: "", isCorrect: false },
-      { id: 3, text: "", isCorrect: false },
+      { id: 3, text: "nu", isCorrect: true },
     ],
   },
   {
     questionText: "ネ",
     answerOptions: [
       { id: 0, text: "", isCorrect: false },
-      { id: 1, text: "", isCorrect: false },
+      { id: 1, text: "ne", isCorrect: true },
       { id: 2, text: "", isCorrect: false },
       { id: 3, text: "", isCorrect: false },
     ],
