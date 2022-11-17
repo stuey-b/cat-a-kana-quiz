@@ -20,22 +20,21 @@ const QuitHiraganaPage = ({
 
   return (
     <Card>
-      <main className="MainContainer">
-        <div className="HeaderFooter"></div>
-        <div className="EndPageTop">
+    
+        <div className="Header"></div>
+        <div className="TopContainer">
           <div className="SpeechBubble">wanna quit?</div>
           <img className="CatHead" src="images/cat-main.png" alt="cat" />
         </div>
         <div className="BottomContainer">
           <button onClick={QuitHiraganaQuiz} className="Buttons">
-            Yes!
+            yeah!
           </button>
           <button onClick={ReturnToHiraganaQuiz} className="Buttons">
-            No!
+            nah!
           </button>
         </div>
-        <div className="HeaderFooter"></div>
-      </main>
+        <div className="Footer"></div>
     </Card>
   );
 };

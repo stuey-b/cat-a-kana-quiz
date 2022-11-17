@@ -6,9 +6,7 @@ const HiraganaStudyPage = ({
   setShowStartPage,
   setShowHiraganaQuizPage,
   setShowHiraganaStudyPage,
- 
 }) => {
-  
   const ReturnHome = () => {
     setShowHiraganaStudyPage(false);
     setShowStartPage(true);
@@ -22,12 +20,11 @@ const HiraganaStudyPage = ({
 
   return (
     <Card>
-    
-      <main className="HiraganaMainContainer">
-      <div className="HeaderFooter">
+      <div className="Header">
         <button onClick={ReturnHome}>Home</button>
         <button onClick={HiraganaQuiz}>Quiz</button>
       </div>
+      <main className="HiraganaMainContainer">
         <div className="KanaTitle">hiragana</div>
         <div className="KanaGridContainer">
           <div className="KanaGridItem">
@@ -215,9 +212,8 @@ const HiraganaStudyPage = ({
             <p className="Kana">ん</p>
           </div>
         </div>
-        <div className="HeaderFooter"></div>
       </main>
- 
+      <div className="Footer"></div>
     </Card>
   );
 };

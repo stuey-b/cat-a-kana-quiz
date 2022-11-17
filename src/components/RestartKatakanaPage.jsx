@@ -23,11 +23,11 @@ const RestartKatakanaPage = ({
   };
   return (
     <Card>
-      <div className="HeaderFooter"></div>
-      <main className="MainContainer">
-        <div className="EndPageTop">
+      <div className="Header"></div>
+
+        <div className="TopContainer">
           <div className="SpeechBubble">Restart the Katakana quiz?</div>
-          <img className="Cat1" src="images/cat1.png" alt="cat1" />
+          <img className="CatHead" src="images/cat-10.png" alt="cat" />
         </div>
         <div className="BottomContainer">
           <button onClick={RestartQuiz} className="Buttons">
@@ -37,9 +37,8 @@ const RestartKatakanaPage = ({
             Um..No!
           </button>
         </div>
-      </main>
 
-      <div className="HeaderFooter"></div>
+      <div className="Footer"></div>
     </Card>
   );
 };

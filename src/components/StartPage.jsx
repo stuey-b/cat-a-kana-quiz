@@ -24,7 +24,7 @@ const StartPage = ({
   const StartKatakanaQuiz = () => {
     setShowStartPage(false);
     setShowKatakanaQuizPage(true);
-    shuffleQuestions(basicKatakanaQuestions)
+    shuffleQuestions(basicKatakanaQuestions);
   };
 
   const StartKatakanaStudy = () => {
@@ -35,12 +35,11 @@ const StartPage = ({
   return (
     <>
       <Card>
-      
-        <main className="MainContainer">
-        <div className="HeaderFooter"></div>
+        <div className="Header"></div>
+       
           <div className="TopContainer">
             <div className="SpeechBubble">cat-a-kana</div>
-            <img className="CatHead" src="images/cat-main.png" alt="cat"/>
+            <img className="CatHead" src="images/cat-main.png" alt="cat" />
           </div>
           <div className="BottomContainer">
             <button onClick={StartHiraganaQuiz} className="Buttons">
@@ -56,9 +55,7 @@ const StartPage = ({
               katakana study
             </button>
           </div>
-          <div className="HeaderFooter"></div>
-        </main>
-        
+        <div className="Footer"></div>
       </Card>
     </>
   );

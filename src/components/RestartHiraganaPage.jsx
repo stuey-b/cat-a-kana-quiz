@@ -24,11 +24,10 @@ const RestartHiraganaPage = ({
 
   return (
     <Card>
-      <div className="HeaderFooter"></div>
-      <main className="MainContainer">
-        <div className="EndPageTop">
-          <div className="SpeechBubble">Are you sure you want to restart?</div>
-          <img className="Cat1" src="images/cat1.png" alt="cat1" />
+      <div className="Header"></div>
+        <div className="TopContainer">
+          <div className="SpeechBubble">wanna restart?</div>
+          <img className="CatHead" src="images/cat-10.png" alt="cat" />
         </div>
         <div className="BottomContainer">
           <button onClick={RestartQuiz} className="Buttons">
@@ -38,9 +37,7 @@ const RestartHiraganaPage = ({
             Um..No!
           </button>
         </div>
-      </main>
-
-      <div className="HeaderFooter"></div>
+      <div className="Footer"></div>
     </Card>
   );
 };

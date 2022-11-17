@@ -22,7 +22,7 @@ const KatakanaStudyPage = ({
 
   return (
     <Card>
-      <div className="HeaderFooter">
+      <div className="Header">
         <button onClick={ReturnHome}>Home</button>
         <button onClick={KatakanaQuiz}>Quiz</button>
       </div>
@@ -215,6 +215,7 @@ const KatakanaStudyPage = ({
           </div>
         </div>
       </main>
+      <div className="Footer"></div>
     </Card>
   );
 };

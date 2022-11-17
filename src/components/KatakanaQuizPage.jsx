@@ -38,19 +38,16 @@ const KatakanaQuizPage = ({
   };
   return (
     <Card>
-      <div className="HeaderFooter">
+      <div className="Header">
         <button onClick={RestartKatakanaQuiz}>Restart</button>
         <button onClick={QuitKatakanaQuiz}>Quit</button>
       </div>
-      <main className="MainContainer">
         <div className="TopContainer">
           <div className="SpeechBubble">
-            <h2 className="">
               {basicKatakanaQuestions[currentQuestion].questionText}
-            </h2>
           </div>
 
-          <img className="Cat1" src="images/cat1.png" alt="cat1" />
+          <img className="CatHead" src="images/cat-main.png" alt="cat" />
         </div>
         <div className="BottomContainer">
           {basicKatakanaQuestions[currentQuestion].answerOptions.map(
@@ -65,9 +62,7 @@ const KatakanaQuizPage = ({
             )
           )}
         </div>
-      </main>
-
-      <div className="HeaderFooter">
+      <div className="Footer">
         <p>Score: {score}</p>
         <p>
           Question: {currentQuestion + 1}/{basicKatakanaQuestions.length}
