@@ -7,35 +7,35 @@ body {
 }
 
 .Card {
-  @apply h-screen w-screen bg-offWhite text-center grid grid-rows-16;
+  @apply h-screen w-screen bg-gradient-to-b from-pink to-blue text-center grid grid-rows-16 border-8 border-pureWhite rounded-3xl;
 }
 
 .TopContainer {
-  @apply row-start-2 row-span-8 bg-lightGreen flex flex-col justify-center items-center py-4 rounded-b-xl drop-shadow-md;
+  @apply  row-start-2 row-span-8 flex flex-col justify-center items-center py-4 -mb-8 ;
 }
 
 .BottomContainer {
-  @apply row-start-10 row-span-6 bg-darkerGreen flex flex-col justify-center items-center py-4 gap-4;
+  @apply row-start-10 row-span-6 flex flex-col justify-center items-center py-4 gap-4 text-pureWhite;
 }
 
 .SpeechBubble {
-  @apply bg-pureWhite w-4/5 h-2/3 rounded-3xl flex justify-center items-center font-bold text-4xl py-10;
+  @apply bg-pureWhite w-4/5 h-1/2 rounded-3xl flex justify-center items-center font-bold text-4xl drop-shadow-lg;
 }
 
 .CatHead {
-  @apply h-1/2 -my-2;
+  @apply h-1/2;
 }
 
 .Buttons {
-  @apply bg-pureWhite w-4/6 text-xl py-2 rounded-lg border;
+  @apply  w-4/6 text-xl py-2 rounded-lg border-pureWhite font-bold drop-shadow-lg border-4;
 }
 
 .HiraganaMainContainer {
-  @apply row-start-2 row-span-14 bg-darkGreen flex flex-col justify-center items-center;
+  @apply row-start-2 row-span-14 flex flex-col justify-center items-center text-pureWhite;
 }
 
 .KatakanaMainContainer {
-  @apply row-start-2 row-span-14 bg-red flex flex-col justify-center items-center;
+  @apply row-start-2 row-span-14  flex flex-col justify-center items-center;
 }
 
 .KanaGridContainer {
@@ -43,11 +43,11 @@ body {
 }
 
 .KanaTitle {
-  @apply bg-pureWhite w-5/6 flex justify-center items-center rounded-lg text-2xl font-bold pb-1 mt-4 border;
+  @apply  w-5/6 flex justify-center items-center rounded-lg text-2xl font-bold py-2 mt-4 border-2;
 }
 
 .KanaGridItem {
-  @apply bg-pureWhite rounded-lg p-1 -order-1 border;
+  @apply  rounded-lg p-1 -order-1 border-2;
 }
 
 .Romaji {
@@ -55,17 +55,17 @@ body {
 }
 
 .Kana {
-  @apply text-xl;
+  @apply text-xl font-bold;
 }
 
 .FinalScoreContainer {
-  @apply flex flex-col text-2xl gap-4;
+  @apply flex flex-col text-xl gap-4;
 }
 
 .Header {
-  @apply row-start-1 flex justify-around items-center text-xl text-pureWhite bg-red;
+  @apply row-start-1 flex justify-around items-center text-xl text-pureWhite font-bold
 }
 
 .Footer {
-  @apply row-start-16 flex justify-around items-center text-xl text-pureWhite bg-red;
+  @apply row-start-16 flex justify-around items-center text-xl text-pureWhite font-bold
 }

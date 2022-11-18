@@ -6,10 +6,12 @@ module.exports = {
     colors: {
       pureWhite: "#ffffff",
       offWhite: "#f3eded",
-      red: "#fda9a9",
-      lightGreen: "#b9eedc",
-      darkGreen: "#96beb1",
-      darkerGreen: "#82939b"
+      red: "#f98284",
+      green: "#2ce8f5",
+      orange: "#ffe6c6",
+      blue: "#124e89",
+      purple: "#68386c",
+      pink: "#b55088"
     },
     extend: {
       gridTemplateRows: {

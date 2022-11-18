@@ -193,11 +193,11 @@ const KatakanaStudyPage = ({
             <p className="Romaji">ya</p>
             <p className="Kana">ヤ</p>
           </div>
-          <div className="bg-pureWhite rounded-xl p-1 -order-1 col-start-3">
+          <div className="KanaGridItem col-start-3">
             <p className="Romaji">yu</p>
             <p className="Kana">ユ</p>
           </div>
-          <div className="bg-pureWhite rounded-xl p-1 -order-1 col-start-5">
+          <div className="KanaGridItem col-start-5">
             <p className="Romaji">yo</p>
             <p className="Kana">ヨ</p>
           </div>
@@ -205,11 +205,11 @@ const KatakanaStudyPage = ({
             <p className="Romaji">wa</p>
             <p className="Kana">ワ</p>
           </div>
-          <div className="bg-pureWhite rounded-xl p-1 -order-1 col-start-3">
+          <div className="KanaGridItem col-start-3">
             <p className="Romaji">wo</p>
             <p className="Kana">ヲ</p>
           </div>
-          <div className="bg-pureWhite rounded-xl p-1 -order-1 col-start-5">
+          <div className="KanaGridItem -order-1 col-start-5">
             <p className="Romaji">n</p>
             <p className="Kana">ン</p>
           </div>

@@ -191,11 +191,11 @@ const HiraganaStudyPage = ({
             <p className="Romaji">ya</p>
             <p className="Kana">や</p>
           </div>
-          <div className="bg-pureWhite rounded-xl p-1 -order-1 col-start-3 border">
+          <div className="KanaGridItem col-start-3">
             <p className="Romaji">yu</p>
             <p className="Kana">ゆ</p>
           </div>
-          <div className="bg-pureWhite rounded-xl p-1 -order-1 col-start-5 border">
+          <div className="KanaGridItem col-start-5">
             <p className="Romaji">yo</p>
             <p className="Kana">よ</p>
           </div>
@@ -203,11 +203,11 @@ const HiraganaStudyPage = ({
             <p className="Romaji">wa</p>
             <p className="Kana">わ</p>
           </div>
-          <div className="bg-pureWhite rounded-xl p-1 -order-1 col-start-3 border">
+          <div className="KanaGridItem col-start-3">
             <p className="Romaji">wo</p>
             <p className="Kana">を</p>
           </div>
-          <div className="bg-pureWhite rounded-xl p-1 -order-1 col-start-5 border">
+          <div className="KanaGridItem col-start-5">
             <p className="Romaji">n</p>
             <p className="Kana">ん</p>
           </div>
