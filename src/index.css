@@ -19,7 +19,7 @@ body {
 }
 
 .SpeechBubble {
-  @apply bg-pureWhite w-4/5 h-1/2 rounded-3xl flex justify-center items-center font-bold text-4xl drop-shadow-lg;
+  @apply bg-pureWhite w-4/5 h-1/2 rounded-3xl flex justify-center items-center font-bold text-4xl drop-shadow-lg md:w-4/5 md:text-6xl lg:w-1/2;
 }
 
 .CatHead {
@@ -27,7 +27,7 @@ body {
 }
 
 .Buttons {
-  @apply  w-4/6 text-xl py-2 rounded-lg border-pureWhite font-bold drop-shadow-lg border-4;
+  @apply  w-4/6 text-xl py-2 rounded-lg border-pureWhite font-bold drop-shadow-lg border-4 md:w-1/2 md:text-2xl md:py-3 lg:w-1/2 2xl:w-1/4 lg:hover:bg-pureWhite lg:hover:text-blue transition-colors  ;
 }
 
 .HiraganaMainContainer {
@@ -35,27 +35,27 @@ body {
 }
 
 .KatakanaMainContainer {
-  @apply row-start-2 row-span-14  flex flex-col justify-center items-center;
+  @apply row-start-2 row-span-14 flex flex-col justify-center items-center;
 }
 
 .KanaGridContainer {
-  @apply grid grid-cols-5 gap-1.5 w-5/6 py-4;
+  @apply grid grid-cols-5 gap-1.5 w-5/6 py-4 md:w-3/4 md:gap-3;
 }
 
 .KanaTitle {
-  @apply  w-5/6 flex justify-center items-center rounded-lg text-2xl font-bold py-2 mt-4 border-2;
+  @apply  w-5/6 flex justify-center items-center rounded-lg text-2xl font-bold py-2 mt-4 border-2 md:w-3/4;
 }
 
 .KanaGridItem {
-  @apply  rounded-lg p-1 -order-1 border-2;
+  @apply rounded-lg p-1 -order-1 border-2 md:py-2;
 }
 
 .Romaji {
-  @apply text-sm;
+  @apply text-sm md:text-lg;
 }
 
 .Kana {
-  @apply text-xl font-bold;
+  @apply text-xl font-bold md:text-2xl;
 }
 
 .FinalScoreContainer {
@@ -63,9 +63,9 @@ body {
 }
 
 .Header {
-  @apply row-start-1 flex justify-around items-center text-xl text-pureWhite font-bold
+  @apply row-start-1 flex justify-around items-center text-xl text-pureWhite font-bold md:text-2xl;
 }
 
 .Footer {
-  @apply row-start-16 flex justify-around items-center text-xl text-pureWhite font-bold
+  @apply row-start-16 flex justify-around items-center text-xl text-pureWhite font-bold md:text-2xl
 }
