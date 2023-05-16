@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cat-a-kana-quiz/static/css/main.9222be8c.css",
+    "main.js": "/cat-a-kana-quiz/static/js/main.21e7c01a.js",
+    "index.html": "/cat-a-kana-quiz/index.html",
+    "main.9222be8c.css.map": "/cat-a-kana-quiz/static/css/main.9222be8c.css.map",
+    "main.21e7c01a.js.map": "/cat-a-kana-quiz/static/js/main.21e7c01a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9222be8c.css",
+    "static/js/main.21e7c01a.js"
+  ]
+}
