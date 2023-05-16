@@ -19,7 +19,7 @@ body {
 }
 
 .SpeechBubble {
-  @apply bg-pureWhite w-4/5 h-1/2 rounded-3xl flex justify-center items-center font-bold text-4xl drop-shadow-lg md:w-4/5 md:text-6xl lg:w-1/2;
+  @apply bg-pureWhite w-4/5 h-1/2 rounded-3xl flex justify-center items-center font-bold text-5xl drop-shadow-lg md:w-4/5 md:text-6xl lg:w-1/2;
 }
 
 .CatHead {
