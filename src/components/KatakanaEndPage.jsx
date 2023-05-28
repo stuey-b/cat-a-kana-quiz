@@ -1,5 +1,5 @@
 import React from "react";
-import { basicKatakanaQuestions } from "../katakana";
+import { basicKatakanaQuestions } from "../questions/katakana";
 import Card from "./Card";
 
 const KatakanaEndPage = ({

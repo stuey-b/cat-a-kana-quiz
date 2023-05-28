@@ -3,69 +3,57 @@
 @tailwind utilities;
 
 body {
-  font-family: "Yomogi", cursive;
+  font-family: "Courier New", sans-serif;
 }
 
 .Card {
-  @apply h-screen w-screen bg-gradient-to-b from-pink to-blue text-center grid grid-rows-16 border-8 border-pureWhite rounded-3xl;
+  @apply h-screen w-screen bg-emerald-200 flex flex-col justify-center bg-cover bg-blend-darken;
 }
 
 .TopContainer {
-  @apply  row-start-2 row-span-8 flex flex-col justify-center items-center py-4 -mb-8 ;
+  @apply flex flex-col justify-evenly items-center gap-4;
 }
 
 .BottomContainer {
-  @apply row-start-10 row-span-6 flex flex-col justify-center items-center py-4 gap-4 text-pureWhite;
+  @apply flex flex-col justify-center items-center gap-4;
 }
 
 .SpeechBubble {
-  @apply bg-pureWhite w-4/5 h-1/2 rounded-3xl flex justify-center items-center font-bold text-5xl drop-shadow-lg md:w-4/5 md:text-6xl lg:w-1/2;
-}
-
-.CatHead {
-  @apply h-1/2;
+  @apply bg-white flex w-5/6 h-5/6 rounded-lg justify-center items-center font-bold text-3xl;
 }
 
 .Buttons {
-  @apply  w-4/6 text-xl py-2 rounded-lg border-pureWhite font-bold drop-shadow-lg border-4 md:w-1/2 md:text-2xl md:py-3 lg:w-1/2 2xl:w-1/4 lg:hover:bg-pureWhite lg:hover:text-blue transition-colors  ;
+  @apply w-4/6 py-2.5 rounded-lg bg-slate-700 text-white;
+}
+
+.CatHead {
+  @apply h-48;
 }
 
 .HiraganaMainContainer {
-  @apply row-start-2 row-span-14 flex flex-col justify-center items-center text-pureWhite;
-}
-
-.KatakanaMainContainer {
-  @apply row-start-2 row-span-14 flex flex-col justify-center items-center;
+  @apply flex flex-col justify-center items-center;
 }
 
 .KanaGridContainer {
-  @apply grid grid-cols-5 gap-1.5 w-5/6 py-4 md:w-3/4 md:gap-3;
+  @apply grid grid-cols-5 gap-1.5 w-5/6 py-4;
 }
 
 .KanaTitle {
-  @apply  w-5/6 flex justify-center items-center rounded-lg text-2xl font-bold py-2 mt-4 border-2 md:w-3/4;
+  @apply flex justify-center items-center font-bold mt-4;
 }
 
 .KanaGridItem {
-  @apply rounded-lg p-1 -order-1 border-2 md:py-2;
-}
-
-.Romaji {
-  @apply text-sm md:text-lg;
-}
-
-.Kana {
-  @apply text-xl font-bold md:text-2xl;
-}
-
-.FinalScoreContainer {
-  @apply flex flex-col text-xl gap-4;
+  @apply rounded-lg border border-white text-sm -order-1 flex flex-col justify-center items-center;
 }
 
 .Header {
-  @apply row-start-1 flex justify-around items-center text-xl text-pureWhite font-bold md:text-2xl;
+  @apply flex justify-around items-center h-10 bg-white fixed top-0 left-0 w-screen;
 }
 
 .Footer {
-  @apply row-start-16 flex justify-around items-center text-xl text-pureWhite font-bold md:text-2xl
+  @apply flex justify-around items-center h-10 bg-white fixed bottom-0 left-0 w-screen;
+}
+
+.FinalScoreContainer {
+  @apply flex flex-col  justify-center items-center gap-3;
 }

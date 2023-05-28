@@ -1,5 +1,5 @@
 import React from "react";
-import { basicHiraganaQuestions } from "../hiragana";
+import { basicHiraganaQuestions } from "../questions/hiragana";
 import Card from "./Card";
 
 const HiraganaEndPage = ({
@@ -41,16 +41,15 @@ const HiraganaEndPage = ({
               : score >= 40
               ? "whoa dude!"
               : score >= 30
-              ? "good work bro!"
+              ? "good job bro!"
               : score >= 20
               ? "nice try!"
               : score >= 10
               ? "don't give up!"
               : score >= 1
-              ? "you should study.."
-              : "oof. 0%.."}
+              ? "you should study."
+              : "oof. 0%"}
           </div>
-
           <img
             className="CatHead"
             src={

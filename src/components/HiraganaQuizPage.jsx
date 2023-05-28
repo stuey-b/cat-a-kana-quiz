@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-import { basicHiraganaQuestions } from "../hiragana";
+import { basicHiraganaQuestions } from "../questions/hiragana";
 
 const HiraganaQuizPage = ({
   setShowHiraganaQuizPage,
@@ -38,35 +38,41 @@ const HiraganaQuizPage = ({
   };
 
   return (
-    <Card>
-      <div className="Header">
+    <>
+     <div className="Header">
         <button onClick={RestartHiraganaQuiz}>Restart</button>
         <button onClick={QuitHiraganaQuiz}>Quit</button>
       </div>
-      <div className="TopContainer">
-        <div className="SpeechBubble">
-          {basicHiraganaQuestions[currentQuestion].questionText}
+      <Card>
+     
+        <div className="TopContainer">
+          <div className="SpeechBubble">
+            {basicHiraganaQuestions[currentQuestion].questionText}
+          </div>
+          <img className="CatHead" src="images/cat-main.png" alt="cat" />
         </div>
-        <img className="CatHead" src="images/cat-main.png" alt="cat" />
-      </div>
-      <div className="BottomContainer">
-        {basicHiraganaQuestions[currentQuestion].answerOptions.map((answer) => (
-          <button
-            key={answer.id}
-            onClick={() => handleClick(answer.isCorrect)}
-            className="Buttons"
-          >
-            {answer.text}
-          </button>
-        ))}
-      </div>
+        <div className="BottomContainer">
+          {basicHiraganaQuestions[currentQuestion].answerOptions.map((answer) => (
+            <button
+              key={answer.id}
+              onClick={() => handleClick(answer.isCorrect)}
+              className="Buttons"
+            >
+              {answer.text}
+            </button>
+          ))}
+        </div>
+        
+      </Card>
       <div className="Footer">
-        <p>Score: {score}</p>
-        <p>
-          Question: {currentQuestion + 1}/{basicHiraganaQuestions.length}
-        </p>
-      </div>
-    </Card>
+          <p>Score: {score}</p>
+          <p>
+            Question: {currentQuestion + 1}/{basicHiraganaQuestions.length}
+          </p>
+        </div>
+    </>
+
+
   );
 };
 

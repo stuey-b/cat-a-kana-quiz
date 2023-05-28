@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-import { basicKatakanaQuestions, shuffleQuestions } from "../katakana";
+import { basicKatakanaQuestions, shuffleQuestions } from "../questions/katakana";
 
 const KatakanaStudyPage = ({
   setShowStartPage,

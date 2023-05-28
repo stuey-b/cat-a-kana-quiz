@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-import { basicKatakanaQuestions, shuffleQuestions } from "../katakana";
+import { basicKatakanaQuestions, shuffleQuestions } from "../questions/katakana";
 
 const QuitKatakanaPage = ({
   setShowKatakanaQuizPage,
@@ -23,7 +23,7 @@ const QuitKatakanaPage = ({
       <div className="Header"></div>
         <div className="TopContainer">
           <div className="SpeechBubble">wanna quit?</div>
-          <img className="CatHead" src="images/cat-10.png" alt="cat1" />
+          <img className="CatHead" src="../public/images/cat-10.png" alt="cat" />
         </div>
         <div className="BottomContainer">
           <button onClick={QuitKatakanaQuiz} className="Buttons">

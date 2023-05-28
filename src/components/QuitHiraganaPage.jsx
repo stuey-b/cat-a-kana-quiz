@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-import { basicHiraganaQuestions, shuffleQuestions } from "../hiragana";
+import { basicHiraganaQuestions, shuffleQuestions } from "../questions/hiragana";
 
 const QuitHiraganaPage = ({
   setShowHiraganaQuizPage,
@@ -19,8 +19,7 @@ const QuitHiraganaPage = ({
   };
 
   return (
-    <Card>
-    
+    <Card>    
         <div className="Header"></div>
         <div className="TopContainer">
           <div className="SpeechBubble">wanna quit?</div>
