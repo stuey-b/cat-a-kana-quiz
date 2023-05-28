@@ -36,7 +36,7 @@ const StartPage = ({
   return (
 
     <Card>
-    <div className="Header"></div>
+    {/* <div className="Header"></div> */}
       <div className="TopContainer">
         <div className="SpeechBubble">cat-a-kana</div>
         <img className="CatHead" src="images/cat-main.png" alt="cat" />
@@ -55,7 +55,7 @@ const StartPage = ({
           katakana study
         </button>
       </div>
-      <div className="Footer"></div>
+      {/* <div className="Footer"></div> */}
     </Card>
 
   );
